@@ -374,4 +374,5 @@ m.get_root().html.add_child(folium.Element(legend_html))
 # ================================
 folium.LayerControl(collapsed=False).add_to(m)
 m.save(output_path)
-IFrame(output_path, width='100%', height=600)
+st.title("Peta Rencana")
+st_data = st_folium(m, width=800, height=600)
